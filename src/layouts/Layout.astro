@@ -1,34 +1,35 @@
 ---
-import '../styles/global.css'
-import Header from '../components/Header.astro';
-const { title = '' } = Astro.props;
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+const { title = "" } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{`D.J. Rideout${title ? ` • ${title}` : ''}`}</title>
-	</head>
-	<body class="flex flex-col items-center">
-		<div class="max-w-[80ch] w-full px-2 box-border">
-			<Header />
-			<div class="m-2">
-				<slot />
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{`D.J. Rideout${title ? ` • ${title}` : ""}`}</title>
+  </head>
+  <body class="flex flex-col items-center">
+    <div class="box-border w-full max-w-[80ch] px-2">
+      <Header />
+      <div class="m-2">
+        <slot />
+      </div>
+    </div>
+  </body>
 </html>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-		background-color: lightblue;
-		font-family: courier-prime, monospace;
-	}
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    font-family: courier-prime, monospace;
+  }
 </style>
