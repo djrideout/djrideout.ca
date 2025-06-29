@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: courier-prime;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../public/fonts/Courier Prime.ttf");
+}
+@font-face {
+  font-family: courier-prime;
+  font-style: italic;
+  font-weight: normal;
+  src: url("../../public/fonts/Courier Prime Italic.ttf");
+}
+@font-face {
+  font-family: courier-prime;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../public/fonts/Courier Prime Bold.ttf");
+}
+@font-face {
+  font-family: courier-prime;
+  font-style: italic;
+  font-weight: bold;
+  src: url("../../public/fonts/Courier Prime Bold Italic.ttf");
+}
+
+a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: initial;
+  list-style-position: inside;
+}

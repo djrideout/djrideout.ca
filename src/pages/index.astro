@@ -1,11 +1,15 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { Image } from 'astro:assets';
+import lion from '../assets/Adult_Male_Lion.jpg';
 ---
-
 <Layout>
-	<Welcome />
+	<Image src={lion} alt="A lion" class="rounded-xl my-5" />
+	<div class="text-xl my-5">
+		Software developer in St. John's, NL
+	</div>
+	<ul>
+		<li>Building tools for media teams at <a href="https://backlight.co/">Backlight</a></li>
+		<li>Coaching up-and-coming software developers at <a href="https://get-building.ca/">Get Building</a></li>
+	</ul>
 </Layout>
