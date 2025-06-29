@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import Header from '../components/Header.astro';
+const { title = '' } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -9,7 +10,7 @@ import Header from '../components/Header.astro';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>D.J. Rideout</title>
+		<title>{`D.J. Rideout${title ? ` • ${title}` : ''}`}</title>
 	</head>
 	<body class="flex flex-col items-center">
 		<div class="max-w-[80ch] w-full px-2 box-border">
