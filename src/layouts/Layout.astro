@@ -14,7 +14,7 @@ const { title = "" } = Astro.props;
     <title>{`D.J. Rideout${title ? ` • ${title}` : ""}`}</title>
   </head>
   <body class="flex flex-col items-center">
-    <div class="box-border w-full max-w-[80ch] px-2">
+    <div class="w-full max-w-[80ch] px-2">
       <Header />
       <div class="m-2">
         <slot />
