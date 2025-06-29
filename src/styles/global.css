@@ -32,5 +32,9 @@ a {
 
 ul {
   list-style: initial;
-  list-style-position: inside;
+  padding-left: 3ch;
+}
+
+li {
+  list-style-position: outside;
 }

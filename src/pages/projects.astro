@@ -3,5 +3,35 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Projects">
-  <p>here's some projects</p>
+  <div class="my-5">This is an incomplete list of projects I have or am working on, in no particular order. Check out my <a href="https://github.com/djrideout?tab=repositories">GitHub repositories</a> for a more complete list and to see my latest activity.</a></div>
+  <div class="my-5 text-xl">Projects</div>
+  <ul>
+    <li><a href="https://github.com/djrideout/VOBM">VOBM</a> - An RSS feed of VOCM articles translated into Newfoundland English</li>
+    <li><a href="https://github.com/djrideout/chippy">chippy</a> - CHIP-8 interpreter/emulator written in Rust</li>
+    <li><a href="https://github.com/djrideout/Pawtible">Pawtible</a> - Game Boy emulator and debugger written in JavaScript</li>
+    <li><a href="https://github.com/djrideout/PolyphaseResize">PolyphaseResize</a> - AviSynth filter for scaling pixel-perfect sources</li>
+    <li><a href="https://github.com/djrideout/240pResize">240pResize</a> - OBS filter for scaling pixel-perfect sources</li>
+    <li><a href="https://github.com/djrideout/node-usb2snes-client">node-usb2snes-client</a> - Node.js client library for the USB2SNES WebSocket server</li>
+    <li><a href="https://adventofcode.com/">Advent of Code</a> solutions</li>
+    <ul class="pl-10">
+      <li><a href="https://github.com/djrideout/advent2015">2015</a> - incomplete (Python)</li>
+      <li><a href="https://github.com/djrideout/advent2024">2024</a> - 25/25 days (Rust)</li>
+    </ul>
+  </ul>
+  <div class="my-5 text-xl">Open Source Contributions</div>
+    <ul>
+      <li><a href="https://github.com/itgmania/itgmania">ITGmania</a> - Open source rhythm game</li>
+      <ul class="pl-10">
+        <li>Improve song wheel navigation by automatically selecting the correct difficulty when in level sort mode (PR <a href="https://github.com/itgmania/itgmania/pull/598">#598</a>)</li>
+    </ul>
+    <li><a href="https://github.com/CTS-NL/CTS-NL.github.io/pull/336">CTS-NL.github.io</a> - Computer Technology Society of NL website</li>
+    <ul class="pl-10">
+      <li>Add <a href="https://llmstxt.org/">llms.txt</a> information file for easy web scraping by large language models (PR <a href="https://github.com/CTS-NL/CTS-NL.github.io/pull/336">#336</a>)</li>
+    </ul>
+  </ul>
+  <div class="my-5 text-xl">Webtoys / Useless Websites</div>
+  <ul>
+    <li><a href="https://sandsla.sh/">sandsla.sh</a></li>
+    <li><a href="https://hydrocity.zone/">hydrocity.zone</a></li>
+  </ul>
 </Layout>
