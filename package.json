@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.10.1",
+    "remark-rehype": "^11.1.2",
     "tailwindcss": "^4.1.11"
   }
 }
