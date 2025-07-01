@@ -23,5 +23,15 @@ const { Content } = await render(post);
       <p class="italic">Updated on {new Date(post.data.updatedDate).toISOString().slice(0, 10)}</p>
     )}
   </div>
-  <Content />
+  <div class="content">
+    <Content />
+  </div>
 </Layout>
+
+<style>
+  .content {
+    p, img {
+      padding-bottom: 1.25rem; /* pb-5 */
+    }
+  }
+</style>
