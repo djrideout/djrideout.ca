@@ -1,7 +1,7 @@
 ---
 title: Astro
 description: A post about this website
-postedDate: 2025-06-29
+pubDate: 2025-06-29
 ---
 
 Another developer blog with one post!

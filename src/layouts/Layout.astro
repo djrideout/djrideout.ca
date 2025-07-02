@@ -9,9 +9,15 @@ const { title = "" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{`D.J. Rideout${title ? ` • ${title}` : ""}`}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="D.J. Rideout"
+      href={new URL("/posts/rss.xml", Astro.site)}
+    />
   </head>
   <body class="flex flex-col items-center">
     <div class="w-full max-w-[80ch] px-2">

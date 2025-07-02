@@ -18,10 +18,7 @@ const { Content } = await render(post);
   <div class="py-5">
     <h1 class="text-3xl">{post.data.title}</h1>
     <p class="italic">{post.data.description}</p>
-    <p class="italic">Posted on {new Date(post.data.postedDate).toISOString().slice(0, 10)}</p>
-    {post.data.updatedDate && (
-      <p class="italic">Updated on {new Date(post.data.updatedDate).toISOString().slice(0, 10)}</p>
-    )}
+    <p class="italic">Posted on {new Date(post.data.pubDate!).toISOString().slice(0, 10)}</p>
   </div>
   <div class="content">
     <Content />

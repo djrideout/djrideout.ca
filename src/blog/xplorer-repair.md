@@ -1,7 +1,7 @@
 ---
 title: Guitar Hero X-Plorer Controller Repair
 description: Cleaning and repairing an untested Guitar Hero controller
-postedDate: 2025-07-01
+pubDate: 2025-07-01
 ---
 
 I recently bought an untested Guitar Hero X-Plorer controller from eBay. The description stated it didn't have a breakaway cable, and there was a rattling noise coming from inside. No breakaway cable was not a big deal, and it otherwise sounded serviceable, So I decided to see what I could do with it.

@@ -4,10 +4,10 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from 'astro:content';
 
 const posts = await getCollection('blog');
-posts.sort((a, b) => new Date(b.data.postedDate).getTime() - new Date(a.data.postedDate).getTime());
+posts.sort((a, b) => new Date(b.data.pubDate!).getTime() - new Date(a.data.pubDate!).getTime());
 const postsByYear: Record<string, typeof posts> = {};
 for (const post of posts) {
-  const year = String(new Date(post.data.postedDate).getFullYear());
+  const year = String(new Date(post.data.pubDate!).getFullYear());
   if (!postsByYear[year]) postsByYear[year] = [];
   postsByYear[year].push(post);
 }
@@ -15,13 +15,14 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a));
 ---
 
 <Layout title="Blog">
+  <p class="my-5">Subscribe to my posts via <a href="/posts/rss.xml">RSS</a> if you would like.</p>
   {years.map(year => (
     <section>
-      <div class="text-3xl py-5">{year}</div>
+      <div class="text-3xl my-5">{year}</div>
       <ul>
         {postsByYear[year].map(post => (
           <li>
-            {new Date(post.data.postedDate).toISOString().slice(0, 10)} - <a href={"/posts/" + post.id}>{post.data.title}</a>
+            {new Date(post.data.pubDate!).toISOString().slice(0, 10)} - <a href={"/posts/" + post.id}>{post.data.title}</a>
           </li>
         ))}
       </ul>
